@@ -1,0 +1,35 @@
+{
+  "_comment": "10-hospital contact network. Edge weights = patient transfer probability per 24h.",
+  "nodes": [
+    "H1", "H2", "H3", "H4", "H5",
+    "H6", "H7", "H8", "H9", "H10",
+    "icu", "general_ward", "ward_B", "surgical_ward"
+  ],
+  "edges": [
+    {"from": "H1", "to": "H2", "weight": 0.08},
+    {"from": "H1", "to": "H3", "weight": 0.06},
+    {"from": "H2", "to": "H3", "weight": 0.10},
+    {"from": "H2", "to": "H4", "weight": 0.05},
+    {"from": "H3", "to": "H4", "weight": 0.12},
+    {"from": "H3", "to": "H5", "weight": 0.07},
+    {"from": "H3", "to": "H6", "weight": 0.09},
+    {"from": "H4", "to": "H5", "weight": 0.06},
+    {"from": "H4", "to": "H7", "weight": 0.04},
+    {"from": "H5", "to": "H6", "weight": 0.08},
+    {"from": "H5", "to": "H8", "weight": 0.05},
+    {"from": "H6", "to": "H7", "weight": 0.07},
+    {"from": "H6", "to": "H9", "weight": 0.06},
+    {"from": "H7", "to": "H8", "weight": 0.09},
+    {"from": "H7", "to": "H10", "weight": 0.04},
+    {"from": "H8", "to": "H9", "weight": 0.08},
+    {"from": "H8", "to": "H10", "weight": 0.05},
+    {"from": "H9", "to": "H10", "weight": 0.10},
+    {"from": "H10", "to": "H1", "weight": 0.03},
+    {"from": "icu", "to": "general_ward", "weight": 0.15},
+    {"from": "icu", "to": "ward_B", "weight": 0.12},
+    {"from": "general_ward", "to": "ward_B", "weight": 0.10},
+    {"from": "general_ward", "to": "surgical_ward", "weight": 0.08},
+    {"from": "ward_B", "to": "surgical_ward", "weight": 0.07},
+    {"from": "surgical_ward", "to": "icu", "weight": 0.06}
+  ]
+}

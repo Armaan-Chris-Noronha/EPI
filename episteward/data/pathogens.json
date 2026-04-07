@@ -1,0 +1,116 @@
+{
+  "E_coli_ESBL": {
+    "gram_stain": "negative",
+    "resistance_mechanisms": ["ESBL", "CTX-M"],
+    "default_susceptibilities": {
+      "colistin":                     "susceptible",
+      "meropenem":                    "susceptible",
+      "ertapenem":                    "susceptible",
+      "piperacillin-tazobactam":      "susceptible",
+      "ceftriaxone":                  "resistant",
+      "cefazolin":                    "resistant",
+      "ampicillin":                   "resistant",
+      "vancomycin":                   "resistant",
+      "linezolid":                    "resistant",
+      "azithromycin":                 "resistant",
+      "ciprofloxacin":                "resistant",
+      "nitrofurantoin":               "susceptible",
+      "trimethoprim-sulfamethoxazole":"resistant"
+    },
+    "mutation_rate": 1e-7,
+    "fitness_cost": 0.05,
+    "_notes": "Vancomycin/linezolid intrinsically inactive vs gram-negatives. ESBL confers resistance to all penicillins and cephalosporins; carbapenems and pip-tazo (with BLI) retain activity."
+  },
+
+  "K_pneumoniae_CRK": {
+    "gram_stain": "negative",
+    "resistance_mechanisms": ["KPC", "NDM", "OXA-48"],
+    "default_susceptibilities": {
+      "colistin":                     "susceptible",
+      "meropenem":                    "resistant",
+      "ertapenem":                    "resistant",
+      "piperacillin-tazobactam":      "resistant",
+      "ceftriaxone":                  "resistant",
+      "cefazolin":                    "resistant",
+      "ampicillin":                   "resistant",
+      "vancomycin":                   "resistant",
+      "linezolid":                    "resistant",
+      "azithromycin":                 "resistant",
+      "ciprofloxacin":                "resistant",
+      "nitrofurantoin":               "intermediate",
+      "trimethoprim-sulfamethoxazole":"resistant"
+    },
+    "mutation_rate": 1e-8,
+    "fitness_cost": 0.08,
+    "_notes": "Carbapenemases (KPC/NDM/OXA-48) hydrolyse all beta-lactams. Colistin remains the primary active agent. Vancomycin/linezolid intrinsically inactive."
+  },
+
+  "S_aureus_MRSA": {
+    "gram_stain": "positive",
+    "resistance_mechanisms": ["mecA", "PBP2a"],
+    "default_susceptibilities": {
+      "colistin":                     "resistant",
+      "meropenem":                    "resistant",
+      "ertapenem":                    "resistant",
+      "piperacillin-tazobactam":      "resistant",
+      "ceftriaxone":                  "resistant",
+      "cefazolin":                    "resistant",
+      "ampicillin":                   "resistant",
+      "vancomycin":                   "susceptible",
+      "linezolid":                    "susceptible",
+      "azithromycin":                 "resistant",
+      "ciprofloxacin":                "resistant",
+      "nitrofurantoin":               "intermediate",
+      "trimethoprim-sulfamethoxazole":"susceptible"
+    },
+    "mutation_rate": 1e-8,
+    "fitness_cost": 0.06,
+    "_notes": "mecA confers resistance to all beta-lactams including carbapenems. Colistin intrinsically inactive vs gram-positives. TMP-SMX often active in community-acquired MRSA."
+  },
+
+  "E_faecium_VRE": {
+    "gram_stain": "positive",
+    "resistance_mechanisms": ["vanA", "vanB"],
+    "default_susceptibilities": {
+      "colistin":                     "resistant",
+      "meropenem":                    "resistant",
+      "ertapenem":                    "resistant",
+      "piperacillin-tazobactam":      "resistant",
+      "ceftriaxone":                  "resistant",
+      "cefazolin":                    "resistant",
+      "ampicillin":                   "resistant",
+      "vancomycin":                   "resistant",
+      "linezolid":                    "susceptible",
+      "azithromycin":                 "resistant",
+      "ciprofloxacin":                "resistant",
+      "nitrofurantoin":               "susceptible",
+      "trimethoprim-sulfamethoxazole":"resistant"
+    },
+    "mutation_rate": 1e-8,
+    "fitness_cost": 0.07,
+    "_notes": "E. faecium intrinsically resistant to cephalosporins, colistin. vanA/vanB confer high-level vancomycin resistance. Linezolid is primary active agent. Nitrofurantoin used for UTI only."
+  },
+
+  "P_aeruginosa_MDR": {
+    "gram_stain": "negative",
+    "resistance_mechanisms": ["OprD-loss", "MexAB-OprM", "AmpC", "metallo-beta-lactamase"],
+    "default_susceptibilities": {
+      "colistin":                     "susceptible",
+      "meropenem":                    "resistant",
+      "ertapenem":                    "resistant",
+      "piperacillin-tazobactam":      "resistant",
+      "ceftriaxone":                  "resistant",
+      "cefazolin":                    "resistant",
+      "ampicillin":                   "resistant",
+      "vancomycin":                   "resistant",
+      "linezolid":                    "resistant",
+      "azithromycin":                 "resistant",
+      "ciprofloxacin":                "resistant",
+      "nitrofurantoin":               "resistant",
+      "trimethoprim-sulfamethoxazole":"resistant"
+    },
+    "mutation_rate": 1e-6,
+    "fitness_cost": 0.04,
+    "_notes": "P. aeruginosa has intrinsic resistance to many agents. MDR phenotype adds acquired resistance via efflux pumps and beta-lactamases. Ertapenem intrinsically inactive (lacks activity vs Pseudomonas). Colistin usually retained."
+  }
+}
