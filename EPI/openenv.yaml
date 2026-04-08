@@ -1,0 +1,31 @@
+name: episteward
+version: "1.0.0"
+description: >
+  AI Antibiotic Stewardship environment. Agent manages antimicrobial
+  prescriptions, resistance containment, and hospital network outbreak
+  response. Math grounded in PK/PD pharmacology and evolutionary epidemiology.
+tags:
+  - openenv
+  - healthcare
+  - antimicrobial-resistance
+  - epidemiology
+  - optimization
+tasks:
+  - id: task1_triage
+    name: Prescription Triage
+    difficulty: easy
+    max_steps: 5
+    reward_range: [0.0, 1.0]
+  - id: task2_containment
+    name: Resistance Containment
+    difficulty: medium
+    max_steps: 15
+    reward_range: [0.0, 1.0]
+  - id: task3_outbreak
+    name: Network Outbreak Response
+    difficulty: hard
+    max_steps: 30
+    reward_range: [0.0, 1.0]
+observation_space: episteward.models.EpiObservation
+action_space: episteward.models.EpiAction
+reward_model: episteward.models.EpiReward

@@ -1,0 +1,145 @@
+{
+  "colistin": {
+    "class": "polymyxin",
+    "spectrum": "broad",
+    "pk_params": {"F": 1.0, "Vd_L_kg": 0.34, "CL_L_h_kg": 0.08, "ke": 0.24},
+    "mic_breakpoints": {"susceptible": 2, "resistant": 4},
+    "standard_dose_mg": 150,
+    "frequencies": [12],
+    "routes": ["IV"],
+    "last_resort": true,
+    "budget_units_per_course": 1
+  },
+  "meropenem": {
+    "class": "carbapenem",
+    "spectrum": "broad",
+    "pk_params": {"F": 1.0, "Vd_L_kg": 0.3, "CL_L_h_kg": 0.1, "ke": 0.33},
+    "mic_breakpoints": {"susceptible": 2, "resistant": 8},
+    "standard_dose_mg": 1000,
+    "frequencies": [8],
+    "routes": ["IV"],
+    "last_resort": false,
+    "budget_units_per_course": 0
+  },
+  "ertapenem": {
+    "class": "carbapenem",
+    "spectrum": "broad",
+    "pk_params": {"F": 1.0, "Vd_L_kg": 0.12, "CL_L_h_kg": 0.011, "ke": 0.092},
+    "mic_breakpoints": {"susceptible": 0.5, "resistant": 2},
+    "standard_dose_mg": 1000,
+    "frequencies": [24],
+    "routes": ["IV", "IM"],
+    "last_resort": false,
+    "budget_units_per_course": 0
+  },
+  "piperacillin-tazobactam": {
+    "class": "beta_lactam_beta_lactamase_inhibitor",
+    "spectrum": "broad",
+    "pk_params": {"F": 1.0, "Vd_L_kg": 0.24, "CL_L_h_kg": 0.12, "ke": 0.50},
+    "mic_breakpoints": {"susceptible": 16, "resistant": 64},
+    "standard_dose_mg": 4500,
+    "frequencies": [6, 8],
+    "routes": ["IV"],
+    "last_resort": false,
+    "budget_units_per_course": 0
+  },
+  "ceftriaxone": {
+    "class": "third_gen_cephalosporin",
+    "spectrum": "moderate",
+    "pk_params": {"F": 1.0, "Vd_L_kg": 0.12, "CL_L_h_kg": 0.012, "ke": 0.10},
+    "mic_breakpoints": {"susceptible": 1, "resistant": 4},
+    "standard_dose_mg": 2000,
+    "frequencies": [24],
+    "routes": ["IV", "IM"],
+    "last_resort": false,
+    "budget_units_per_course": 0
+  },
+  "cefazolin": {
+    "class": "first_gen_cephalosporin",
+    "spectrum": "narrow",
+    "pk_params": {"F": 1.0, "Vd_L_kg": 0.13, "CL_L_h_kg": 0.06, "ke": 0.46},
+    "mic_breakpoints": {"susceptible": 2, "resistant": 8},
+    "standard_dose_mg": 2000,
+    "frequencies": [8],
+    "routes": ["IV"],
+    "last_resort": false,
+    "budget_units_per_course": 0
+  },
+  "ampicillin": {
+    "class": "penicillin",
+    "spectrum": "narrow",
+    "pk_params": {"F": 0.5, "Vd_L_kg": 0.3, "CL_L_h_kg": 0.19, "ke": 0.63},
+    "mic_breakpoints": {"susceptible": 8, "resistant": 32},
+    "standard_dose_mg": 2000,
+    "frequencies": [6],
+    "routes": ["IV", "PO"],
+    "last_resort": false,
+    "budget_units_per_course": 0
+  },
+  "vancomycin": {
+    "class": "glycopeptide",
+    "spectrum": "narrow",
+    "pk_params": {"F": 1.0, "Vd_L_kg": 0.7, "CL_L_h_kg": 0.06, "ke": 0.086},
+    "mic_breakpoints": {"susceptible": 2, "resistant": 32},
+    "standard_dose_mg": 1500,
+    "frequencies": [12],
+    "routes": ["IV"],
+    "last_resort": false,
+    "budget_units_per_course": 0
+  },
+  "linezolid": {
+    "class": "oxazolidinone",
+    "spectrum": "narrow",
+    "pk_params": {"F": 0.9, "Vd_L_kg": 0.6, "CL_L_h_kg": 0.08, "ke": 0.13},
+    "mic_breakpoints": {"susceptible": 2, "resistant": 8},
+    "standard_dose_mg": 600,
+    "frequencies": [12],
+    "routes": ["IV", "PO"],
+    "last_resort": false,
+    "budget_units_per_course": 0
+  },
+  "azithromycin": {
+    "class": "macrolide",
+    "spectrum": "narrow",
+    "pk_params": {"F": 0.37, "Vd_L_kg": 31.1, "CL_L_h_kg": 0.63, "ke": 0.02},
+    "mic_breakpoints": {"susceptible": 0.5, "resistant": 2},
+    "standard_dose_mg": 500,
+    "frequencies": [24],
+    "routes": ["IV", "PO"],
+    "last_resort": false,
+    "budget_units_per_course": 0
+  },
+  "ciprofloxacin": {
+    "class": "fluoroquinolone",
+    "spectrum": "narrow",
+    "pk_params": {"F": 0.7, "Vd_L_kg": 2.5, "CL_L_h_kg": 0.35, "ke": 0.14},
+    "mic_breakpoints": {"susceptible": 0.5, "resistant": 4},
+    "standard_dose_mg": 500,
+    "frequencies": [12],
+    "routes": ["IV", "PO"],
+    "last_resort": false,
+    "budget_units_per_course": 0
+  },
+  "nitrofurantoin": {
+    "class": "nitrofurantoin",
+    "spectrum": "narrow",
+    "pk_params": {"F": 0.9, "Vd_L_kg": 0.8, "CL_L_h_kg": 0.6, "ke": 0.75},
+    "mic_breakpoints": {"susceptible": 32, "resistant": 128},
+    "standard_dose_mg": 100,
+    "frequencies": [12],
+    "routes": ["PO"],
+    "last_resort": false,
+    "budget_units_per_course": 0
+  },
+  "trimethoprim-sulfamethoxazole": {
+    "class": "sulfonamide",
+    "spectrum": "narrow",
+    "pk_params": {"F": 0.9, "Vd_L_kg": 1.6, "CL_L_h_kg": 0.08, "ke": 0.05},
+    "mic_breakpoints": {"susceptible": 2, "resistant": 8},
+    "standard_dose_mg": 960,
+    "frequencies": [12],
+    "routes": ["IV", "PO"],
+    "last_resort": false,
+    "budget_units_per_course": 0
+  }
+}
